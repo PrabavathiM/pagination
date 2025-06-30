@@ -1,0 +1,184 @@
+If you want to **store repeat files** but **rename them using the current time** (so each upload is saved without overwriting), then yes — you can add the current time to the filename before saving it.
+
+---
+
+### ✅ Example: Rename file using time (to prevent overwrite)
+
+```php
+date_default_timezone_set("Asia/Kolkata");
+
+$filename = $_FILES["uploadfile"]["name"];
+$filetype = $_FILES["uploadfile"]["type"];
+$filetemp  = $_FILES["uploadfile"]["tmp_name"];
+$fileext = pathinfo($filename, PATHINFO_EXTENSION);
+$uploadtime = date("Ymd_His");  // format: 20250604_143512 (Ymd_His)
+
+$newfilename = pathinfo($filename, PATHINFO_FILENAME) . "_" . $uploadtime . "." . $fileext;
+
+$uploaddir = "uploads/";
+$targetfile = $uploaddir . $newfilename;
+```
+
+Then save the file:
+
+```php
+if (move_uploaded_file($filetemp, $targetfile)) {
+    echo "File uploaded as: $newfilename";
+} else {
+    echo "Upload failed.";
+}
+```
+
+---
+
+### 💡 Output:
+
+If you upload `resume.pdf` at 2:35:12 PM on June 4, 2025:
+
+```
+File saved as: resume_20250604_143512.pdf
+```
+
+No overwrite. Each upload is stored uniquely.
+
+---
+
+Do you also want to save the filename and upload time in a MySQL table?
+If you want to **store repeat files** but **rename them using the current time** (so each upload is saved without overwriting), then yes — you can add the current time to the filename before saving it.
+
+---
+
+### ✅ Example: Rename file using time (to prevent overwrite)
+
+```php
+date_default_timezone_set("Asia/Kolkata");
+
+$filename = $_FILES["uploadfile"]["name"];
+$filetype = $_FILES["uploadfile"]["type"];
+$filetemp  = $_FILES["uploadfile"]["tmp_name"];
+$fileext = pathinfo($filename, PATHINFO_EXTENSION);
+$uploadtime = date("Ymd_His");  // format: 20250604_143512 (Ymd_His)
+
+$newfilename = pathinfo($filename, PATHINFO_FILENAME) . "_" . $uploadtime . "." . $fileext;
+
+$uploaddir = "uploads/";
+$targetfile = $uploaddir . $newfilename;
+```
+
+Then save the file:
+
+```php
+if (move_uploaded_file($filetemp, $targetfile)) {
+    echo "File uploaded as: $newfilename";
+} else {
+    echo "Upload failed.";
+}
+```
+
+---
+
+### 💡 Output:
+
+If you upload `resume.pdf` at 2:35:12 PM on June 4, 2025:
+
+```
+File saved as: resume_20250604_143512.pdf
+```
+
+No overwrite. Each upload is stored uniquely.
+
+---
+
+Do you also want to save the filename and upload time in a MySQL table?
+If you want to **store repeat files** but **rename them using the current time** (so each upload is saved without overwriting), then yes — you can add the current time to the filename before saving it.
+
+---
+
+### ✅ Example: Rename file using time (to prevent overwrite)
+
+```php
+date_default_timezone_set("Asia/Kolkata");
+
+$filename = $_FILES["uploadfile"]["name"];
+$filetype = $_FILES["uploadfile"]["type"];
+$filetemp  = $_FILES["uploadfile"]["tmp_name"];
+$fileext = pathinfo($filename, PATHINFO_EXTENSION);
+$uploadtime = date("Ymd_His");  // format: 20250604_143512 (Ymd_His)
+
+$newfilename = pathinfo($filename, PATHINFO_FILENAME) . "_" . $uploadtime . "." . $fileext;
+
+$uploaddir = "uploads/";
+$targetfile = $uploaddir . $newfilename;
+```
+
+Then save the file:
+
+```php
+if (move_uploaded_file($filetemp, $targetfile)) {
+    echo "File uploaded as: $newfilename";
+} else {
+    echo "Upload failed.";
+}
+```
+
+---
+
+### 💡 Output:
+
+If you upload `resume.pdf` at 2:35:12 PM on June 4, 2025:
+
+```
+File saved as: resume_20250604_143512.pdf
+```
+
+No overwrite. Each upload is stored uniquely.
+
+---
+
+Do you also want to save the filename and upload time in a MySQL table?
+If you want to **store repeat files** but **rename them using the current time** (so each upload is saved without overwriting), then yes — you can add the current time to the filename before saving it.
+
+---
+
+### ✅ Example: Rename file using time (to prevent overwrite)
+
+```php
+date_default_timezone_set("Asia/Kolkata");
+
+$filename = $_FILES["uploadfile"]["name"];
+$filetype = $_FILES["uploadfile"]["type"];
+$filetemp  = $_FILES["uploadfile"]["tmp_name"];
+$fileext = pathinfo($filename, PATHINFO_EXTENSION);
+$uploadtime = date("Ymd_His");  // format: 20250604_143512 (Ymd_His)
+
+$newfilename = pathinfo($filename, PATHINFO_FILENAME) . "_" . $uploadtime . "." . $fileext;
+
+$uploaddir = "uploads/";
+$targetfile = $uploaddir . $newfilename;
+```
+
+Then save the file:
+
+```php
+if (move_uploaded_file($filetemp, $targetfile)) {
+    echo "File uploaded as: $newfilename";
+} else {
+    echo "Upload failed.";
+}
+```
+
+---
+
+### 💡 Output:
+
+If you upload `resume.pdf` at 2:35:12 PM on June 4, 2025:
+
+```
+File saved as: resume_20250604_143512.pdf
+```
+
+No overwrite. Each upload is stored uniquely.
+
+---
+
+Do you also want to save the filename and upload time in a MySQL table?
