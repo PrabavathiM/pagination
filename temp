@@ -167,41 +167,6 @@ $conn->close();
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <?php
 
 $conn = new mysqli('localhost', 'root', '', 'paganation');
